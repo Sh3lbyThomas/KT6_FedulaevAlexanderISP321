@@ -7,6 +7,22 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="650" Width="1000">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height = "70"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" Background="#FF76E383">
+            <Image Source="resources/logo.png"
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Center"
+                   Margin="200, 0, 0, 0">
+            </Image>
+            <TextBlock Text="Товары для животных"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center"
+                       FontSize="30">
+            </TextBlock>
+        </Grid>
+        <Frame x:Name="MainFrame" Grid.Row="1" NavigationUIVisibility="Hidden"></Frame>
     </Grid>
 </Window>
